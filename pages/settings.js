@@ -45,7 +45,7 @@ export default function SettingsPage(){
                         className="text-l p-2" 
                     >
                         {products.length > 0 && products.map(product => (
-                            <option value={product._id}>{product.title}</option>
+                            <option key={product._id} value={product._id}>{product.title}</option>
                         ))}
                     </select>
                     <div>
