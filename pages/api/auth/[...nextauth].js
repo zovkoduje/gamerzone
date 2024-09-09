@@ -4,7 +4,7 @@ import { MongoDBAdapter } from "@auth/mongodb-adapter"
 import client from "@/lib/mongodb"
 import { getServerSession } from 'next-auth'
 
-const adminEmails= ['zovkoduje98@gmail.com']
+const adminEmails= ['zovkoduje98@gmail.com','uniritest@gmail.com']
 export const authOptions= {
   secret: process.env.SECRET,
   providers: [
