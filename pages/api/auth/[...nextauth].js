@@ -19,8 +19,14 @@ export const authOptions= {
       if (adminEmails.includes(session?.user?.email)){
       return session;
       }else{
-        return false;
+        return false; 
       }
+    },
+    signIn: async ({ user }) => {
+      if (!adminEmails.includes(user.email)) {
+        return false; 
+      }
+      return true;
     }
   }
 }
